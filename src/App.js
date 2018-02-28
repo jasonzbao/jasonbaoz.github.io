@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {Helmet} from 'react-helmet';
 import {Grid, Col, Row} from 'react-bootstrap';
 
-import logo from './logo.svg';
 import education from './editables/education.json';
 import work_experience from './editables/work_experience.json';
 import './App.css';
