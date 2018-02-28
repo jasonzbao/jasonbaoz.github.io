@@ -1,0 +1,26 @@
+[{
+  "company": "Facebook",
+  "link": "https://facebook.com",
+  "title": "Software Engineer Intern (Incoming)",
+  "date": "August 2018 - December 2018",
+  "location": "Menlo Park, California",
+  "details": ["Incoming!"]
+},
+{
+  "company": "Bridgewater Associates",
+  "link": "https://bridgewater.com",
+  "title": "Investment Engineer Intern (Incoming)",
+  "date": "June 2018 - August 2018",
+  "location": "Westport, Connecticut",
+  "gpa_title": "Computer Science GPA: ",
+  "details": ["Incoming!"]
+},
+{
+  "company": "Neurotrack",
+  "link": "https://neurotrack.com/",
+  "title": "Machine Learning Research",
+  "date": "May 2017 - December 2017",
+  "location": "Redwood City, California",
+  "details": ["Analyzed feature space with tools such as SVD, PCA and Spectral Clustering. Analyzed quality of the data by calculating variance of the eye-gaze plots clustered by locations weighted by pupil diameter variance. Integrated saccade orientation related features from other research papers.", "Created a presentation with ROC curves, Mesh Grids, Cross-Validation charts and Histograms – beginning the process to publish results."]
+}
+]
