@@ -3,7 +3,7 @@ import {Helmet} from 'react-helmet';
 import {Grid, Col, Row} from 'react-bootstrap';
 
 import education from './editables/education.json';
-import work_experience from './editables/work_experience.json';
+import experience from './editables/experience.json';
 import './App.css';
 
 
@@ -34,7 +34,6 @@ class App extends Component {
   }
 
   renderDetails(details) {
-    console.log(details)
     return details.map((entry, index) => {
       return (
         <li className="detail">{entry}</li>
@@ -42,16 +41,16 @@ class App extends Component {
     })
   }
 
-  renderWorkExperiences() {
-    return work_experience.map((entry, index) => {
+  renderExperienceDetails(d) {
+    return d.map((entry, index) => {
       return (
         <div className="sub-container subwork-container" key={index}>
           <Row>
             <Col xs={12} md={8}>
-              <a href={entry.link}><h5 className="company">{entry.company}</h5></a>
+              <a href={entry.header_link}><h5 className="header">{entry.header}</h5></a>
             </Col>
             <Col xs={6} md={4}>
-              <h6 className="location float-right" ex={6} md={4}>{entry.location}</h6>
+              <h6 className="first-right-align float-right" ex={6} md={4}>{entry.first_right_align}</h6>
             </Col>
           </Row>
           <Row>
@@ -59,7 +58,7 @@ class App extends Component {
               <p className="title">{entry.title}</p>
             </Col>
             <Col xs={6} md={4}>
-              <p className="date float-right" ex={6} md={4}>{entry.date}</p>
+              <p className="second-right-align float-right" ex={6} md={4}>{entry.second_right_align}</p>
             </Col>
           </Row>
           <ul>
@@ -70,11 +69,15 @@ class App extends Component {
     })
   }
 
-  renderLeadershipExperience() {
-    return (
-      <div>
-      </div>
-    )
+  renderExperiences() {
+    return experience.map((entry, index) => {
+      return (
+        <div className="other-container" key={index}>
+          <h3 className="page-header">{entry.section_title}</h3>
+          {this.renderExperienceDetails(entry.section_data)}
+        </div>
+      )
+    })
   }
 
   render() {
@@ -95,14 +98,7 @@ class App extends Component {
             <h3 className="page-header">Education</h3>
             {this.renderEducations()}
           </div>
-          <div className="work-experience-container">
-            <h3 className="page-header">Work Experience</h3>
-            {this.renderWorkExperiences()}
-          </div>
-          <div className="leadership-experience-container">
-            <h3 className="page-header">Leadership Experience</h3>
-            {this.renderLeadershipExperience()}
-          </div>
+          {this.renderExperiences()}
         </Grid>
       </div>
     );
