@@ -13,7 +13,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-    ReactGA.initialize('UA-115299218-1');
+    ReactGA.initialize(basic_info.google_analytics);
+    ReactGA.pageview('/')
   }
 
   renderNavigation() {
