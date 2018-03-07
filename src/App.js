@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Helmet} from 'react-helmet';
 import {Grid, Col, Row} from 'react-bootstrap';
 
+import basic_info from './editables/basic_info.json';
 import education from './editables/education.json';
 import experience from './editables/experience.json';
 import './App.css';
@@ -11,6 +12,23 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+  }
+
+  renderNavigation() {
+    return experience.map((entry) => {
+      return (
+        <li className="nav-item">
+          <a className = "nav-link" href={"#" + entry.section_title}>{entry.section_title}</a>
+        </li>
+      )
+    })
+  }
+  renderSubEducation(s) {
+    return s.map((entry, index) => {
+      return (
+        <p className="wrap"><span className="h6">{entry.section_title}</span>{entry.section_content}</p>
+      )
+    })
   }
 
   renderEducations() {
@@ -25,9 +43,7 @@ class App extends Component {
               <p className="year float-right" ex={6} md={4}>{entry.year}</p>
             </Col>
           </Row>
-          <p className="degree">{entry.degree}</p>
-          <p className="gpa"><span className="h6">{entry.gpa_title}</span>{entry.gpa}</p>
-          <p className="relevant_coursework"><span className="h6">Relevant Coursework: </span>{entry.relevant_coursework}</p>
+          {this.renderSubEducation(entry.sections)}
         </div>
       )
     })
@@ -72,7 +88,7 @@ class App extends Component {
   renderExperiences() {
     return experience.map((entry, index) => {
       return (
-        <div className="other-container" key={index}>
+        <div className="other-container" key={index} id={entry.section_title}>
           <h3 className="page-header">{entry.section_title}</h3>
           {this.renderExperienceDetails(entry.section_data)}
         </div>
@@ -84,15 +100,22 @@ class App extends Component {
     return (
       <div className="container">
         <Helmet>
-          <title>Jason Bao - Online Portfolio</title>
+          <title>Homepage</title>
           <meta charset="utf-8" />
-          <meta id="og:author" property="og:author" content="Jason Bao" />
-          <meta name="author" content="Jason Bao" />
-          <meta name="description" content="Jason Bao - Online Portfolio" />
+          <meta id="og:author" property="og:author" content={basic_info.name} />
+          <meta name="author" content={basic_info.name} />
+          <meta name="description" content={basic_info.name + "- Online Portfolio"} />
         </Helmet>
         <Grid>
           <div className="name-container">
-            <h3>Jason Bao - Online Portfolio</h3>
+            <Row>
+              <Col xs={6} md={4}><h3>{basic_info.name}</h3></Col>
+              <Col xs={12} md={8}>
+                <ul className="nav justify-content-end" role="navigation">
+                  {this.renderNavigation()}
+                </ul>
+              </Col>
+            </Row>
           </div>
           <div className="education-container">
             <h3 className="page-header">Education</h3>

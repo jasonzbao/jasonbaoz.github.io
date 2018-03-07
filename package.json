@@ -2,7 +2,7 @@
   "name": "personal_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://JasonBaoZ.github.io",
+  "homepage": "https://jbao.me",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react": "^16.2.0",

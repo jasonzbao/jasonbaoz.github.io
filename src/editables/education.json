@@ -2,9 +2,18 @@
   "school": "University of California, Berkeley",
   "school_link": "https://berkeley.edu",
   "year": "August 2015 - May 2019",
-  "degree": "B.A. Computer Science, Applied Math, Philosophy",
-  "gpa_title": "Computer Science GPA: ",
-  "gpa": "3.9",
-  "relevant_coursework": "Data Structures, Algorithms, AI, ML (grad), Databases, Real Analysis, Abstract Analysis, Linear Algebra, Abstract Algebra, Deep NN (grad), Probability & Random Processes, Randomness and Computation (grad), Optimization Models and Applications (grad)"
-}
-]
+  "sections" : [
+  	{
+  		"section_title": "",
+  		"section_content": "B.A. Computer Science, Applied Math, Philosophy"
+  	},
+  	{
+  		"section_title": "Computer Science GPA: ",
+  		"section_content": "3.9"
+  	},
+  	{
+  		"section_title": "Relevant Coursework: ",
+  		"section_content": "Data Structures, Algorithms, AI, ML (grad), Databases, Real Analysis, Abstract Analysis, Linear Algebra, Abstract Algebra, Deep NN (grad), Probability & Random Processes, Randomness and Computation (grad), Optimization Models and Applications (grad)"
+  	}
+  ]
+}]

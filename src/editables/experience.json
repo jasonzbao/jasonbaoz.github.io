@@ -29,7 +29,20 @@
       "first_right_align": "Redwood City, California",
       "details": [
         "Analyzed feature space with tools such as SVD, PCA and Spectral Clustering. Analyzed quality of the data by calculating variance of the eye-gaze plots clustered by locations weighted by pupil diameter variance. Integrated saccade orientation related features from other research papers.", 
-        "Created a presentation with ROC curves, Mesh Grids, Cross-Validation charts and Histograms – beginning the process to publish results."
+        "Created a presentation with ROC curves, Mesh Grids, Cross-Validation charts and Histograms – beginning the process to publish results.",
+        "Researched and subsequently extracted features from the 2012 Zola Study dataset with a fixation-saccade algorithm from 100+ GB .eyd binary files. Created infrastructure to store data into .json files - required optimized processing since .eyd files could not be stored in memory.",
+        "Used bootstrapped learning to train Naïve Bayes, SVM and Logistic Regression (used AdaBoost) models, integrated extracted features into existing consumer data and built Django API endpoints to obtain relevant data and designed models to add comments, metadata and scores."
+      ]
+    },
+    {
+      "header": "Bitwage",
+      "header_link": "https://bitwage.com/",
+      "title": "Software Engineer Internship",
+      "second_right_align": "June 2016 - August 2017",
+      "first_right_align": "San Francisco, California",
+      "details": [
+        "Full stack web development with Google App Engine using a Flask framework – extensive coding with Python, JavaScript, and Jinja2", 
+        "Integrated API’s from 10 bit exchanges (used OAuth2 authentication) and designed 3 RESTful API endpoints for various currency functionalities including querying specific data and creating company profiles – worked directly with reps from each company w/ an API"
       ]
     }
   ]
@@ -79,6 +92,17 @@
       "details": [
         "Justin made the website"
       ]
+    },
+    {
+      "header": "Eagle Scout",
+      "header_link": "https://scouting.org",
+      "title": "",
+      "second_right_align": "",
+      "first_right_align": "August 2005 - December 2014",
+      "details": [
+        "Eagle Project: On My Feet (Web) – PHP/Vanilla JS/HTML, API’s including Google Maps, Google Directions etc. – included 1400 resources obtained through extensive DOM scraping (xPath, cURL) and crowd-sourcing – attracted over 400 weekly users at peek by 3 separate homeless organizations around the Bay Area. Gave several workshops on site functionality, teaching intake workers how to add, edit resource etc.",
+        "Available @ github.com/jasonbaoz/on-my-feet"
+      ]
     }
   ]
 },
@@ -95,6 +119,12 @@
         "Worked with Professor Josh Hug to utilize Machine Learning libraries to intelligently analyze Congressional transcripts (SPCA), annotated and cleaned large CSV files with Pandas to make them more usable and to add relevant meta data to the files. Other tech includes Scipy, Numpy etc."
       ]
     }
+  ]
+},
+{
+  "section_title": "Skills and Interests",
+  "section_data": [
+
   ]
 }
 ]
