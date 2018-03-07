@@ -1,3 +1,4 @@
+import ReactGA from 'react-ga';
 import React, { Component } from 'react';
 import {Helmet} from 'react-helmet';
 import {Grid, Col, Row} from 'react-bootstrap';
@@ -12,6 +13,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    ReactGA.initialize('UA-115299218-1');
   }
 
   renderNavigation() {

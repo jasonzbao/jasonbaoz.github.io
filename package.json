@@ -8,6 +8,7 @@
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
+    "react-ga": "^2.4.1",
     "react-helmet": "^5.2.0",
     "react-scripts": "1.1.1"
   },
