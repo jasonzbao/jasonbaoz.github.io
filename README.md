@@ -7,7 +7,7 @@ Features coming soon are multiple layouts you can easily toggle through with ano
 - `git add .`
 - `git commit -m "message here"`
 - `git push origin deploy`
-2. Then run `npm run deploy`
+2. Run `npm run deploy`
 3. Finally, if you have a custom domain, go to settings in your github repo and change the custom domain on the very bottom to your domain.
 
 ## Keeping up to date with master
